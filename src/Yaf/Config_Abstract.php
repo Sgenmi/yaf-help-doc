@@ -22,7 +22,7 @@ abstract class Config_Abstract implements \Iterator , \ArrayAccess , \Countable 
 
     /**
      *
-     * @param string $name
+     * @param string|int $name
      * @return mixed
      *
      * @link https://www.php.net/manual/zh/yaf-config-abstract.get.php
@@ -37,10 +37,15 @@ abstract class Config_Abstract implements \Iterator , \ArrayAccess , \Countable 
     abstract public function readonly();
 
     /**
-     * @param string $name
+     * @param string|int $name
      * @param mixed $value
      * @return mixed
      */
     abstract public function set($name,$value);
+
+    /**
+     * @link https://www.php.net/manual/zh/yaf-config-abstract.toarray.php
+    */
+    abstract public function toArray();
 
 }

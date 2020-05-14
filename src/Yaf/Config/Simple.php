@@ -12,7 +12,8 @@ namespace Yaf\Config;
 class Simple extends \YAF\Config_Abstract implements \Iterator,\ArrayAccess,\Countable {
 
     /**
-     * @inheritDoc
+     * @param string|int $name
+     * @return mixed
      */
     public function get($name) { }
 
@@ -22,7 +23,8 @@ class Simple extends \YAF\Config_Abstract implements \Iterator,\ArrayAccess,\Cou
     public function readonly() { }
 
     /**
-     * @inheritDoc
+     * @param string|int $name
+     * @param mixed $value
      */
     public function set($name, $value) { }
 
@@ -52,27 +54,33 @@ class Simple extends \YAF\Config_Abstract implements \Iterator,\ArrayAccess,\Cou
     public function rewind() { }
 
     /**
-     * @inheritDoc
+     * @param string|int $name
      */
-    public function offsetExists($offset) { }
+    public function offsetExists($name) { }
 
     /**
-     * @inheritDoc
+     * @param string|int $name
      */
-    public function offsetGet($offset) { }
+    public function offsetGet($name) { }
 
     /**
-     * @inheritDoc
+     * @param string|int $name
+     * @param mixed $value
      */
-    public function offsetSet($offset, $value) { }
+    public function offsetSet($name, $value) { }
 
     /**
-     * @inheritDoc
+     * @param string|int $name
      */
-    public function offsetUnset($offset) { }
+    public function offsetUnset($name) { }
 
     /**
      * @inheritDoc
      */
     public function count() { }
+
+    /**
+     * @inheritDoc
+     */
+    public function toArray() { }
 }

@@ -29,6 +29,6 @@ interface Route_Interface
      * @param array $query
      * @return bool
      */
-    public function assemble($info, $query = null);
+    public function assemble(array $info, $query = null);
 
 }

@@ -1,0 +1,15 @@
+{
+    "name": "sgenmi/yaf-help-doc",
+    "type": "library",
+    "description": "Yaf help doc",
+    "require": {
+        "php": ">=5.4"
+    },
+    "authors": [
+        {
+            "name": "史建民",
+            "email": "sgenmi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

@@ -288,5 +288,26 @@ final class Dispatcher
      */
     public function throwException($flag =null){}
 
+    /**
+     * @link
+     *
+     * @desc cn: 获取Reponse实例
+     * @desc en: Retrieve the \Yaf\Response instance
+     * @version >= 3.2.1
+     * @return \Yaf\Response_Abstract
+     */
+    public function getReponse(){}
+
+    /**
+     * @link
+     *
+     * @desc cn: 设置Reponse实例
+     * @desc en: Set the \Yaf\Response instance
+     * @version >= 3.2.1
+     * @return \Yaf\Dispatcher
+     */
+    public function setResponse(){}
+
+
 
 }

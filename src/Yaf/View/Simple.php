@@ -9,8 +9,12 @@
 
 namespace Yaf\View;
 
-
-class Simple implements \Yaf\View_Interface
+/**
+ * Class Simple
+ * @package Yaf\View
+ * @desc  Yaf_View_Simple is final class now ,custom view engin should implements Yaf_View_Interface [yaf>=3.2.0]
+ */
+final class Simple implements \Yaf\View_Interface
 {
 
     /**

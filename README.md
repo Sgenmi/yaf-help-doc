@@ -4,12 +4,12 @@ yaf-help-doc
 * 安装Yaf
    
 ```php
- # wget http://pecl.php.net/get/yaf-3.2.5.tgz
- # tar zxvf yaf-3.2.5.tgz
- # cd yaf-3.2.5
- # phpize   [注意：phpize的路径，环境不同可能路径]
- # ./configure --with-php-config=php-config  [注意：php-config的路径，环境不同可能路径]
- # make && sudo make install
+    wget http://pecl.php.net/get/yaf-3.2.5.tgz
+    tar zxvf yaf-3.2.5.tgz
+    cd yaf-3.2.5
+    phpize   [注意：phpize的路径，环境不同可能路径]
+    ./configure --with-php-config=php-config  [注意：php-config的路径，环境不同可能路径]
+    make && sudo make install
 ```  
 
  * 编辑php.ini

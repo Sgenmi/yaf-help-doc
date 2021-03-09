@@ -1,12 +1,12 @@
-# yaf-help-doc 兼容到yaf 3.2.5
+# yaf-help-doc 兼容到yaf 3.3.2
 yaf-help-doc
 
 * 安装Yaf
    
 ```php
-    wget http://pecl.php.net/get/yaf-3.2.5.tgz
-    tar zxvf yaf-3.2.5.tgz
-    cd yaf-3.2.5
+    wget http://pecl.php.net/get/yaf-3.3.2.tgz
+    tar zxvf yaf-3.3.2.tgz
+    cd yaf-3.3.2
     phpize   [注意：phpize的路径，环境不同可能路径]
     ./configure --with-php-config=php-config  [注意：php-config的路径，环境不同可能路径]
     make && sudo make install

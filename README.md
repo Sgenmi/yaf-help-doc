@@ -1,19 +1,20 @@
-# yaf-help-doc 兼容到yaf 3.3.2
-yaf-help-doc
+# Yaf-help-doc is compatible with Yaf 3.3.4
 
-* 安装Yaf
+* Install Yaf
    
 ```php
-    wget http://pecl.php.net/get/yaf-3.3.2.tgz
+    wget http://pecl.php.net/get/yaf-3.3.4.tgz
     tar zxvf yaf-3.3.2.tgz
-    cd yaf-3.3.2
-    phpize   [注意：phpize的路径，环境不同可能路径]
-    ./configure --with-php-config=php-config  [注意：php-config的路径，环境不同可能路径]
+    cd yaf-3.3.4
+    phpize   [/path/to/phpize]
+    ./configure --with-php-config=php-config  [/path/to/php-config]
     make && sudo make install
 ```  
 
- * 编辑php.ini
-    * 在php.ini中增加如下代码
+ * Edit php.ini
+    * Add the following code to php.ini
+    * open use_namespace
+    
  ```php
      extension=yaf.so
      yaf.use_namespace=1
@@ -21,7 +22,7 @@ yaf-help-doc
      yaf.name_separator=\;
 ```
  
-* nginx 配置
+* nginx Config 
 
 ```php
 
@@ -30,7 +31,8 @@ server {
   server_name xx.com ;
   access_log off;
   index index.html index.htm index.php;
-  # 项目路径
+  # Project path
+  
   root /var/www/xxxx/public;
 
   #error_page 404 /404.html;
@@ -40,7 +42,6 @@ server {
       try_files $uri $uri/ /index.php?$args;
   }
 
-  #根据实际环境修改
   location ~ [^/]\.php(/|$) {
     #fastcgi_pass remote_php_ip:9000;
     fastcgi_pass unix:/dev/shm/php-cgi.sock;

@@ -39,5 +39,5 @@ final class Map implements \Yaf\Route_Interface
      * @param array $info
      * @param array $query
      */
-    public function assemble($info, $query = null){}
+    public function assemble(array $info, array $query = null){}
 }

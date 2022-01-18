@@ -303,10 +303,10 @@ final class Dispatcher
      *
      * @desc cn: 设置Reponse实例
      * @desc en: Set the \Yaf\Response instance
-     * @version >= 3.2.1
+     * @version >= 3.2.2
      * @return \Yaf\Dispatcher
      */
-    public function setResponse(){}
+    public function setResponse(\Yaf\Response_Abstract $response){}
 
 
 
